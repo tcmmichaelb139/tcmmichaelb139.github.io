@@ -1,7 +1,7 @@
 const navBar = document.querySelector(".navBar");
 
 let timeline = gsap.timeline({
-    default: { duration: 0.7, ease: "expo.inOut" },
+    default: { duration: 0.6, ease: "expo.inOut" },
 });
 
 navBar.addEventListener("mouseover", () => {
