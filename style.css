@@ -51,7 +51,8 @@ main {
 
 .navLink:hover {
     filter: grayscale(0%);
-    background-color: var(--bg-light);
+    background-color: var(--bg2);
+    transition: all 500ms ease;
 }
 
 .linkText {

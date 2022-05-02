@@ -14,7 +14,7 @@
     --accent1: var(--pink);
     --accent2: var(--pink-dark);
     --bg: var(--bg-hex);
-    --bg-light: var(--bg-light-hex);
+    --bg2: var(--bg-light-hex);
     --fg: var(--fg-hex);
 }
 
@@ -22,7 +22,7 @@
     --accent1: var(--pink);
     --accent2: var(--pink-dark);
     --bg: var(--fg-hex);
-    --bg-light: var(--fg-dark);
+    --bg2: var(--fg-dark-hex);
     --fg: var(--bg-hex);
 }
 
