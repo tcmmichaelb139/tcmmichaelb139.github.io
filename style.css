@@ -15,17 +15,8 @@ main {
     box-shadow: 0.25rem 0;
 }
 
-.navBar:hover {
-    width: 16rem;
-}
-
 .navBar:hover .linkText {
-    display: block;
     color: var(--pink);
-}
-
-.navBar:hover .logo ion-icon {
-    transform: rotate(-720deg);
 }
 
 .navBar-nav {
@@ -70,7 +61,7 @@ main {
 .linkText {
     color: var(--pink);
     margin-left: 1rem;
-    display: none;
+    opacity: 0;
 }
 
 .logo {
@@ -89,6 +80,6 @@ main {
     transition: transform var(--transform-speed);
 }
 
-.logo:last-child {
-    margin-left: auto;
+.navBar:hover .logo ion-icon {
+    transform: rotate(-1080deg);
 }
