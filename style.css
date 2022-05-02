@@ -12,7 +12,6 @@ main {
     height: 100vh;
     position: fixed;
     background-color: var(--bg);
-    transition: width var(--transform-speed) ease;
     box-shadow: 0.25rem 0;
 }
 
@@ -61,10 +60,6 @@ main {
     font-size: 32px;
     color: var(--pink);
     transition: var(--transform-speed);
-}
-
-.navBar:hover {
-    width: 16rem;
 }
 
 .navBar:hover .linkText {
