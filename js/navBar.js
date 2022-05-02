@@ -9,7 +9,8 @@ navBar.addEventListener("mouseover", () => {
         timeline.play();
     } else {
         timeline
-            .to("nav", { width: "16rem" })
+            .to(".linkText", { display: "block" }, "-=0.1")
+            .to("nav", { width: "16rem" }, "-=0.1")
             .to(
                 ".linkText",
                 { opacity: 1, pointerEvents: "all", stagger: 0.1 },
@@ -20,4 +21,22 @@ navBar.addEventListener("mouseover", () => {
 
 navBar.addEventListener("mouseout", () => {
     timeline.reverse();
+});
+
+const themeButton = document.querySelector("#themeButton");
+const body = document.body;
+
+const theme = localStorage.getItem("theme");
+
+if (body.classList.contains("dark") && theme === "light")
+    body.classList.replace("dark", "light");
+
+themeButton.addEventListener("click", () => {
+    if (body.classList.contains("light")) {
+        body.classList.replace("light", "dark");
+        localStorage.setItem("theme", "dark");
+    } else {
+        body.classList.replace("dark", "light");
+        localStorage.setItem("theme", "light");
+    }
 });

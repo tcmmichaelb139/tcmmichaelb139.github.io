@@ -1,11 +1,29 @@
 :root {
-    --pink: rgba(249, 179, 209, 1); /* #ffb3d1ff */
-    --pink-rgb: rgb(249, 179, 209); /* #ffb3d1ff */
-    --bg: rgba(0, 0, 0, 1); /* #000000ff */
-    --bg-light: rgba(25, 25, 25, 1); /* #191919ff */
-    --fg: rgba(255, 255, 255, 1); /* #ffffffff */
+    --pink: #ffb3d1;
+    --pink-dark: #d087a5;
+    --orange: #ffcc8c;
+    --bg-hex: #000000;
+    --bg-light-hex: #191919;
+    --fg-hex: #ffffff;
+    --fg-dark-hex: #e6e6e6;
     font-family: "Fira Code";
     font-size: 16px;
+}
+
+.dark {
+    --accent1: var(--pink);
+    --accent2: var(--pink-dark);
+    --bg: var(--bg-hex);
+    --bg-light: var(--bg-light-hex);
+    --fg: var(--fg-hex);
+}
+
+.light {
+    --accent1: var(--pink);
+    --accent2: var(--pink-dark);
+    --bg: var(--fg-hex);
+    --bg-light: var(--fg-dark);
+    --fg: var(--bg-hex);
 }
 
 body {
@@ -14,7 +32,8 @@ body {
     margin: 0;
     padding: 0;
     scrollbar-width: thin;
-    scrollbar-color: var(--pink) var(--bg);
+    scrollbar-color: var(--accent1) var(--bg);
+    transition: background 500ms ease-in-out, color 1000ms ease-in-out;
 }
 
 body::-webkit-scrollbar {
@@ -26,13 +45,14 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: var(--pink);
+    background-color: var(--accent1);
 }
 
 a {
-    color: rgba(var(--pink-rgb), 0.3);
+    color: var(--accent2);
+    text-decoration: none;
 }
 
 a:hover {
-    color: var(--pink);
+    color: var(--accent1);
 }
