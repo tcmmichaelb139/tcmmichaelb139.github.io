@@ -3,6 +3,7 @@
     flex-direction: row;
     align-items: center;
     color: var(--accent1);
+    z-index: 2;
 }
 
 .cateTitle ion-icon {
