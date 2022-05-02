@@ -77,5 +77,5 @@ main {
 }
 
 .navBar:hover .logo ion-icon {
-    transform: rotate(-1080deg);
+    transform: rotate(360deg);
 }
