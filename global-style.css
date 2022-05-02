@@ -1,16 +1,6 @@
 :root {
-    --red: #f94144ff;
-    --orange: #ff9e00ff;
-    --yellow: #ffdd00ff;
-    --green: #208b3aff;
-    --cyan: #00b4d8ff;
-    --blue: #023e8aff;
-    --purple: #9d4eddff;
-    --pink: #f9b3d1ff;
-    --gray: #485265ff;
-    --bg: #212529ff;
-    --fg: #dee2e6ff;
-}
-
-.pastel {
+    --pink: rgba(249, 179, 209, 1); /* #ffb3d1ff */
+    --bg: rgba(0, 0, 0, 1); /* #000000ff */
+    --bg-light: rgba(25, 25, 25, 1); /* #191919ff */
+    --fg: rgba(255, 255, 255, 1); /* #ffffffff */
 }

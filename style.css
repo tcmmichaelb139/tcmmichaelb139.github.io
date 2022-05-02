@@ -1,0 +1,119 @@
+:root {
+    font-family: "Fira Code";
+    font-size: 16px;
+    --transform-speed: 500ms;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--fg);
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: var(--bg);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--pink);
+}
+
+main {
+    margin-left: 5rem;
+    padding: 1rem;
+}
+
+.navBar {
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--bg);
+    transition: width var(--transform-speed) ease;
+    box-shadow: 0.25rem 0;
+}
+
+.navBar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navItem {
+    width: 100%;
+}
+
+.navItem:nth-last-child(2) {
+    margin-top: auto;
+}
+
+.navLink {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    text-decoration: none;
+    filter: grayscale(100%) opacity(1);
+    transition: background-color var(--transform-speed) ease;
+}
+
+.navLink:hover {
+    filter: grayscale(0%);
+    background-color: var(--bg-light);
+    color: var(--fg);
+}
+
+.linkText {
+    color: var(--fg);
+    margin-left: 1rem;
+    display: none;
+}
+
+.navLink ion-icon {
+    min-width: 2rem;
+    width: 2rem;
+    margin: 0 1.5rem;
+    font-size: 32px;
+    color: var(--pink);
+    transition: var(--transform-speed);
+}
+
+.navBar:hover {
+    width: 16rem;
+}
+
+.navBar:hover .linkText {
+    display: block;
+}
+
+.logo {
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    background-color: var(--bg);
+    color: var(--fg);
+    font-size: 1.5rem;
+    letter-spacing: 0.3ch;
+    width: 100%;
+}
+
+.logo ion-icon {
+    transform: rotate(0deg);
+    transition: transform var(--transform-speed);
+}
+
+.logo:last-child {
+    margin-left: auto;
+}
+
+.navBar:hover .logo ion-icon {
+    transform: rotate(-720deg);
+}
