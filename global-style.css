@@ -1,8 +1,8 @@
 :root {
     --pink: rgba(249, 179, 209, 1); /* #ffb3d1ff */
-    --pink-hex: #ffb3d1ff; /* #ffb3d1ff */
+    --pink-hex: #ffb3d1; /* #ffb3d1ff */
     --orange: rgba(241, 80, 37, 1); /* #f15025ff */
-    --orange-hex: #f15025ff; /* #f15025ff */
+    --orange-hex: #ffcc8c; /* #f15025ff */
     --bg: rgba(0, 0, 0, 1); /* #000000ff */
     --bg-light: rgba(25, 25, 25, 1); /* #191919ff */
     --fg: rgba(255, 255, 255, 1); /* #ffffffff */
