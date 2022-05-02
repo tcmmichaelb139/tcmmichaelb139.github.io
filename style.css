@@ -1,26 +1,5 @@
 :root {
-    font-family: "Fira Code";
-    font-size: 16px;
     --transform-speed: 500ms;
-}
-
-body {
-    background-color: var(--bg);
-    color: var(--fg);
-    margin: 0;
-    padding: 0;
-}
-
-body::-webkit-scrollbar {
-    width: 0.5rem;
-}
-
-body::-webkit-scrollbar-track {
-    background-color: var(--bg);
-}
-
-body::-webkit-scrollbar-thumb {
-    background-color: var(--pink);
 }
 
 main {
