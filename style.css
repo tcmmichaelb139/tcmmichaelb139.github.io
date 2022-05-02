@@ -60,18 +60,17 @@ main {
     align-items: center;
     height: 5rem;
     text-decoration: none;
-    filter: grayscale(100%) opacity(1);
+    filter: grayscale(100%);
     transition: background-color var(--transform-speed) ease;
 }
 
 .navLink:hover {
     filter: grayscale(0%);
     background-color: var(--bg-light);
-    color: var(--fg);
 }
 
 .linkText {
-    color: var(--fg);
+    color: var(--pink);
     margin-left: 1rem;
     display: none;
 }
@@ -91,6 +90,7 @@ main {
 
 .navBar:hover .linkText {
     display: block;
+    color: var(--pink);
 }
 
 .logo {
@@ -99,7 +99,7 @@ main {
     margin-bottom: 1.5rem;
     text-align: center;
     background-color: var(--bg);
-    color: var(--fg);
+    color: var(--pink);
     font-size: 1.5rem;
     letter-spacing: 0.3ch;
     width: 100%;
