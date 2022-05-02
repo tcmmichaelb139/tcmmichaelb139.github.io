@@ -1,0 +1,11 @@
+.cateTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--accent1);
+}
+
+.cateTitle ion-icon {
+    font-size: 32px;
+    padding: 1rem;
+}

@@ -9,6 +9,7 @@
         />
         <link href="/global-style.css" rel="stylesheet" />
         <link href="/style.css" rel="stylesheet" />
+        <link href="./style.css" rel="stylesheet" />
         <title>TCM's Projects</title>
     </head>
 
@@ -53,7 +54,16 @@
             </nav>
         </header>
 
-        <main></main>
+        <main>
+            <div class="cateTitle">
+                <ion-icon name="globe-outline"></ion-icon>
+                <h1>Web Development</h1>
+            </div>
+            <div class="cateTitle">
+                <ion-icon name="logo-electron"></ion-icon>
+                <h1>Electron</h1>
+            </div>
+        </main>
         <script
             type="module"
             src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -63,6 +73,6 @@
             src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
         ></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-        <script src="/js/navBar.js"></script>
+        <script defer src="/js/navBar.js"></script>
     </body>
 </html>
