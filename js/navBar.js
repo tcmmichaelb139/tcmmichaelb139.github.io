@@ -1,7 +1,7 @@
 const navBar = document.querySelector(".navBar");
 
 let timeline = gsap.timeline({
-    default: { duration: 0.6, ease: "expo.inOut" },
+    default: { duration: 0.5, ease: "power2.inOut" },
 });
 
 navBar.addEventListener("mouseover", () => {
@@ -9,8 +9,8 @@ navBar.addEventListener("mouseover", () => {
         timeline.play();
     } else {
         timeline
-            .to(".linkText", { display: "block" }, "-=0.1")
-            .to("nav", { width: "16rem" }, "-=0.1")
+            .to(".linkText", { display: "block" })
+            .to("nav", { width: "16rem" }, "-=0.5")
             .to(
                 ".linkText",
                 { opacity: 1, pointerEvents: "all", stagger: 0.1 },
