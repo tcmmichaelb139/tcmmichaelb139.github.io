@@ -1,6 +1,6 @@
 main {
     margin-left: 5rem;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .navBar {
@@ -79,5 +79,14 @@ main {
 }
 
 .navBar:hover .logo ion-icon {
+    transform: rotate(360deg);
+}
+
+#themeButton ion-icon {
+    transform: rotate(0deg);
+    transition: transform 500ms;
+}
+
+#themeButton:hover ion-icon {
     transform: rotate(360deg);
 }
