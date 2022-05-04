@@ -54,7 +54,6 @@ main {
 .navLink svg {
     min-width: 5rem;
     width: 5rem;
-    fill: "currentColor";
     stroke: transparent;
     stroke-width: 0px;
     display: block;
