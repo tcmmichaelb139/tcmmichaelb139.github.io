@@ -47,6 +47,18 @@ main {
     margin: 0 1.5rem;
     font-size: 32px;
     color: var(--accent1);
+    transition: all 500ms ease;
+}
+
+/* Moving to custom svg icons */
+.navLink svg {
+    min-width: 5rem;
+    width: 5rem;
+    fill: "currentColor";
+    stroke: transparent;
+    stroke-width: 0px;
+    display: block;
+    transition: all 500ms ease;
 }
 
 .navLink:hover {
@@ -73,13 +85,14 @@ main {
     width: 100%;
 }
 
-.logo ion-icon {
+/* Moving to custom svg icons */
+.logo svg {
     transform: rotate(0deg);
     transition: transform 700ms;
 }
 
-.navBar:hover .logo ion-icon {
-    transform: rotate(360deg);
+.navBar:hover .logo svg {
+    transform: rotate(-360deg);
 }
 
 #themeButton ion-icon {
