@@ -39,6 +39,13 @@ main {
     height: 5rem;
     text-decoration: none;
     filter: grayscale(100%);
+    transition: all 500ms ease;
+}
+
+.navLink:hover {
+    filter: grayscale(0%);
+    background-color: var(--bg2);
+    transition: all 500ms ease;
 }
 
 .navLink ion-icon {
@@ -47,7 +54,6 @@ main {
     margin: 0 1.5rem;
     font-size: 32px;
     color: var(--accent1);
-    transition: all 500ms ease;
 }
 
 /* Moving to custom svg icons */
@@ -57,13 +63,6 @@ main {
     stroke: transparent;
     stroke-width: 0px;
     display: block;
-    transition: all 500ms ease;
-}
-
-.navLink:hover {
-    filter: grayscale(0%);
-    background-color: var(--bg2);
-    transition: all 500ms ease;
 }
 
 .linkText {
