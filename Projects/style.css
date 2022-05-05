@@ -3,10 +3,10 @@
     flex-direction: row;
     align-items: center;
     color: var(--accent1);
-    z-index: 2;
 }
 
-.cateTitle ion-icon {
-    font-size: 32px;
+.cateTitle svg {
+    width: 2.5rem;
+    height: 2.5rem;
     padding: 1rem;
 }

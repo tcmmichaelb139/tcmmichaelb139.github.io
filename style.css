@@ -54,18 +54,10 @@ main {
     transition: all 500ms ease;
 }
 
-.navLink ion-icon {
-    min-width: 2rem;
-    width: 2rem;
-    margin: 0 1.5rem;
-    font-size: 32px;
-    color: var(--accent1);
-}
-
-/* Moving to custom svg icons */
 .navLink svg {
     min-width: 2.5rem;
     width: 2.5rem;
+    height: 2.5rem;
     margin: 0 1.25rem;
     stroke: transparent;
     stroke-width: 0px;
@@ -98,7 +90,6 @@ main {
     width: 100%;
 }
 
-/* Moving to custom svg icons */
 .logo svg {
     transform: rotate(0deg);
     transition: transform 700ms;
@@ -114,27 +105,9 @@ main {
 
 #themeButton .moon {
     position: absolute;
-    /* inset: 0; */
-
     opacity: 0;
-    /* transform: translateX(20%); */
 }
 
 #themeButton .sun {
     opacity: 1;
-    /* transform: translateX(0); */
 }
-
-/* #themeButton svg { */
-/*     transform: rotate(0deg); */
-/*     transition: transform 500ms; */
-/* } */
-
-/* #themeButton:hover .subSvg { */
-/*     transform: rotate(360deg); */
-/* } */
-/*  */
-/* #themeButton:hover .mainSvg { */
-/*     transform: rotate(-360deg); */
-/* } */
-/*  */
