@@ -1,7 +1,7 @@
 const navBar = document.querySelector(".navBar");
 
 let timeline = gsap.timeline({
-    default: { duration: 0.5, ease: "power2.inOut" },
+    defaults: { duration: 0.5, ease: "power2.inOut" },
 });
 
 navBar.addEventListener("mouseover", () => {
@@ -9,14 +9,14 @@ navBar.addEventListener("mouseover", () => {
         timeline.play();
     } else {
         timeline
-            .to(".linkText", { display: "block" })
-            .to("nav", { width: "16rem" }, "-=0.5")
-            .to(".logo svg", { rotate: "360deg" }, "-=0.5")
+            .to(".linkText", { display: "block" }, 0)
+            .to("nav", { width: "16rem" }, 0)
             .to(
                 ".linkText",
                 { opacity: 1, pointerEvents: "all", stagger: 0.1 },
-                "-=0.4"
-            );
+                0
+            )
+            .to(".logo svg", { rotate: "360deg" }, 0);
     }
 });
 
