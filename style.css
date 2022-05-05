@@ -90,11 +90,6 @@ main {
     width: 100%;
 }
 
-.logo svg {
-    transform: rotate(0deg);
-    transition: transform 700ms;
-}
-
 .navBar:hover .logo svg {
     transform: rotate(-360deg);
 }

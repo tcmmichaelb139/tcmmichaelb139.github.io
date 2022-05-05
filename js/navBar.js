@@ -11,6 +11,7 @@ navBar.addEventListener("mouseover", () => {
         timeline
             .to(".linkText", { display: "block" })
             .to("nav", { width: "16rem" }, "-=0.5")
+            .to(".logo svg", { rotate: "360deg" }, "-=0.5")
             .to(
                 ".linkText",
                 { opacity: 1, pointerEvents: "all", stagger: 0.1 },
