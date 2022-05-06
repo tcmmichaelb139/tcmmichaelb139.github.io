@@ -30,7 +30,7 @@ const body = document.body;
 const theme = localStorage.getItem("theme");
 
 let themeTl = gsap.timeline({
-    defaults: { duration: 1, ease: "expo.inOut" },
+    defaults: { duration: 1, ease: "back.inOut(2)" },
 });
 
 if (body.classList.contains("dark") && theme === "light") {
