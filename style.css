@@ -98,11 +98,11 @@ main {
     position: relative;
 }
 
-#themeButton .moon {
+#themeButton .moonIcon {
     position: absolute;
     opacity: 0;
 }
 
-#themeButton .sun {
+#themeButton .sunIcon {
     opacity: 1;
 }

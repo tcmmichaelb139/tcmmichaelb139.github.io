@@ -35,8 +35,12 @@ let themeTl = gsap.timeline({
 
 if (body.classList.contains("dark") && theme === "light") {
     themeTl
-        .to("#themeButton .sun", { opacity: 0, rotate: "360deg" })
-        .to("#themeButton .moon", { opacity: 1, rotate: "360deg" }, "-=0.5");
+        .to("#themeButton .sunIcon", { opacity: 0, rotate: "360deg" })
+        .to(
+            "#themeButton .moonIcon",
+            { opacity: 1, rotate: "360deg" },
+            "-=0.5"
+        );
     body.classList.replace("dark", "light");
 }
 
@@ -50,9 +54,9 @@ themeButton.addEventListener("click", () => {
             themeTl.play();
         } else {
             themeTl
-                .to("#themeButton .sun", { opacity: 0, rotate: "360deg" })
+                .to("#themeButton .sunIcon", { opacity: 0, rotate: "360deg" })
                 .to(
-                    "#themeButton .moon",
+                    "#themeButton .moonIcon",
                     { opacity: 1, rotate: "360deg" },
                     "-=0.5"
                 );
