@@ -13,8 +13,12 @@ navBar.addEventListener("mouseover", () => {
             .to("nav", { width: "16rem" }, 0)
             .to(
                 ".linkText",
-                { opacity: 1, pointerEvents: "all", stagger: 0.1 },
-                0
+                {
+                    opacity: 1,
+                    pointerEvents: "all",
+                    stagger: 0.05,
+                },
+                0.1
             )
             .to(".logo svg", { rotate: "360deg" }, 0);
     }
