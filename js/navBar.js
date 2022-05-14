@@ -20,7 +20,7 @@ navBar.addEventListener("mouseover", () => {
                 },
                 0.1
             )
-            .to(".logo svg", { rotate: "360deg" }, 0);
+            .to(".logo .logoIcon", { rotate: "360deg" }, 0);
     }
 });
 

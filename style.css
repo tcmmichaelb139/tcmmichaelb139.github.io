@@ -65,11 +65,11 @@ main {
 }
 
 .mainSvg {
-    fill: var(--accent2);
+    fill: var(--accent1);
 }
 
 .subSvg {
-    fill: var(--accent1);
+    fill: var(--accent2);
 }
 
 .linkText {
